@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { createStore } from 'redux'
+import { Provider } from 'react-redux'
 import HelloWorld from './hello-world';
 
 function reducer(state = 0, action) {
@@ -10,8 +11,8 @@ function reducer(state = 0, action) {
 let store = createStore(reducer);
 
 ReactDOM.render(
-  <div>
+   <Provider store={store}>
     <HelloWorld />
-  </div>,
+  </Provider>,
   document.getElementById('root')
 );
