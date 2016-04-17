@@ -7,6 +7,13 @@
     "test": "jest --coverage",
     "start": "node src/server/app.js"
   },
+  "jest": {
+    "unmockedModulePathPatterns": [
+      "<rootDir>/node_modules/react",
+      "<rootDir>/node_modules/react-dom",
+      "<rootDir>/node_modules/react-addons-test-utils"
+    ]
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Intellicode/boilerplate.git"
