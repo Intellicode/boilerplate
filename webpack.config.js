@@ -27,7 +27,7 @@ module.exports = {
     ],
   },
   postcss() {
-    return [require('autoprefixer'), require('precss')];
+    return [require('precss'), require('postcss-cssnext')];
   },
   plugins: [
     new webpack.HotModuleReplacementPlugin(),
