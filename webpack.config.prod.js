@@ -12,6 +12,17 @@ module.exports = {
     filename: 'js/bundle.js',
   },
   module: {
+    preLoaders: [
+      {
+        test: /\.css$/,
+        loader: 'stylelint',
+      },
+      {
+        test: /\.jsx?$/,
+        loader: 'eslint',
+        exclude: /node_modules/,
+      },
+    ],
     loaders: [
       {
         test: /\.jsx?$/,
@@ -26,6 +37,13 @@ module.exports = {
   },
   postcss() {
     return [require('autoprefixer'), require('precss')];
+  },
+  eslint: {
+    failOnWarning: true,
+    failOnError: true,
+  },
+  stylelint: {
+    configFile: path.join(__dirname, './.stylelintrc'),
   },
   plugins: [
     new webpack.DefinePlugin({
