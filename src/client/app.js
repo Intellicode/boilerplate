@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom';
 import { createStore } from 'redux'
 import { Provider } from 'react-redux'
 import HelloWorld from './hello-world';
-
+require('./style/style.css');
 function reducer(state = 0, action) {
   return state;
 }

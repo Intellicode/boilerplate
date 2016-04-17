@@ -1,5 +1,6 @@
 import React from 'react';
 import { connect } from 'react-redux';
+require('./style/style.css');
 
 const HelloWorld = React.createClass({
   render() {
