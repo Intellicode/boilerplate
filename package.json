@@ -6,7 +6,9 @@
   "scripts": {
     "test": "jest --coverage",
     "start": "node src/server/app.js",
-    "build": "webpack --config webpack.config.prod.js --progress -p"
+    "build": "webpack --config webpack.config.prod.js --progress -p",
+    "docker:build": "docker build -t boilerplate .",
+    "docker:run": "docker run -p 8080:80 boilerplate"
   },
   "jest": {
     "unmockedModulePathPatterns": [
