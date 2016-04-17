@@ -8,7 +8,7 @@ module.exports = {
     ],
     output: {
         path: __dirname,
-        filename: 'build/assets/bundle.js',
+        filename: 'build/js/bundle.js',
     },
     module: {
       loaders: [
