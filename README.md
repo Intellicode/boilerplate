@@ -1,4 +1,6 @@
 # boilerplate
+
+[![Greenkeeper badge](https://badges.greenkeeper.io/Intellicode/boilerplate-2016.svg)](https://greenkeeper.io/)
 Boilerplate code for a modern Javascript application
 
 Based on:
